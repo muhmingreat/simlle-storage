@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "solc": "^0.8.7-fixed"
+  },
+  "scripts": {
+    "start": "nodemon deploy",
+    "compile": "yarn solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol"
+  },
+  "devDependencies": {
+    "ethers": "^6.8.0"
+  }
+}
